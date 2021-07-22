@@ -1,0 +1,27 @@
+.header-logo__container {
+  position: absolute;
+  width: 170px;
+  height: 224px;
+  background-color: #242032;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__item:not(:last-child) {
+    margin-left: 57px;
+  }
+}
+.lang {
+  margin-left: 290px;
+}
