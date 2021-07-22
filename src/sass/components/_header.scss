@@ -1,5 +1,12 @@
-.header-logo__container {
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link {
   position: absolute;
+  top: 0;
+  left: 50px;
   width: 170px;
   height: 224px;
   background-color: #242032;
@@ -12,16 +19,18 @@
   justify-content: center;
 
   &__item {
-    margin-top: 30px;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+  }
+  &__link {
+    color: inherit;
   }
 
   &__item:not(:last-child) {
     margin-left: 57px;
   }
-}
-.lang {
-  margin-left: 290px;
+  &__item:last-child {
+    margin-left: 290px;
+  }
 }

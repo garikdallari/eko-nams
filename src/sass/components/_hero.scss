@@ -1,0 +1,15 @@
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  font-size: 52px;
+  font-style: normal;
+  width: 500px;
+  color: white;
+}
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}

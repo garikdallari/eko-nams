@@ -9,28 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.scss">
+    <style>
+      .hero {
+        background-image: url(./images/hero-attels.jpg);
+      }
+    </style>
   </head>
   <body>
+    <!-- Header -->
     <section class="header">
-      <div class="container">
-        <div class="header-logo__container">
+      <a class="header-link" href="#">
           <img src="./images/ekonams-logo.svg" alt="" class="header-logo">
-        </div>
-      
-     
+      </a>
+      <div class="container">
         <ul class="header-nav">
-          <li class="header-nav__item first-item">KVALITĀTE</li>
-          <li class="header-nav__item">PROJEKTI</li>
-          <li class="header-nav__item">SADARBĪBA</li>
-          <li class="header-nav__item">BLOGS</li>
-          <li class="header-nav__item">PAR MUMS</li>
-          <li class="header-nav__item lang">EN</li>
+          <li class="header-nav__item first-item"><a class="header-nav__link" href="#">KVALITĀTE</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">PROJEKTI</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">SADARBĪBA</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">BLOGS</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">PAR MUMS</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">EN</a></li>
         </ul>
-        </div>
-     
+        </div> 
     </section>
-
-  
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-container">
+        <h1 class="hero-title">Guļbūvju ražošana īsti Skandināviskās tradīcijās</h1>
+      </div>
+    </section>
+<!-- Advantages -->
+  <section class="advantages"></section>
+  <ul class="advantages-list"></ul>
 
     <script src="./index.js"></script>
   </body>
