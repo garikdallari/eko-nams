@@ -9,11 +9,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.scss">
-    <style>
-      .hero {
-        background-image: url(./images/hero-attels.jpg);
-      }
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
     
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.2/dist/esri-leaflet.js"
+      integrity="sha512-myckXhaJsP7Q7MZva03Tfme/MSF5a6HC2xryjAM4FxPLHGqlh5VALCbywHnzs2uPoF/4G/QVXyYDDSkp5nPfig=="
+      crossorigin=""></script>
+    
+    <!-- Load Leaflet MarkerCluster and Esri Leaflet Cluster from CDN -->
+    <link rel="stylesheet" type="text/css"
+      href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.Default.css"
+      integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA=="
+      crossorigin="">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.css"
+      integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg=="
+      crossorigin="">
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"
+      integrity="sha512-pWPELjRaw2ZdoT0PDi7iRpRlk1XX3rtnfejJ/HwskyojpHei+9hKpwdphC4yssNt4FM0TjMQOmMrk6ZYSn274w=="
+      crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet-cluster@2.1.0/dist/esri-leaflet-cluster.js"
+      integrity="sha512-fEdNFHisleVtEYdLhW4Z2RsR7TN6hLutE/+O4D+skfTNY2rlHm8HOZARPWkdrFFy/+i2KjFxcZAKTUWaVfbV0g=="
+      crossorigin=""></script>
+    <style>
+       #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+      .hero-container {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+        url(./images/hero-attels.jpg);
+      }
+      .actualities-list__item--img1 {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+        url(./images/kontor-2160x1082.jpg);
+         background-size: cover;
+  background-repeat: no-repeat;
+      }
+        .actualities-list__item--img2  {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+        url(./images/veggtykkelser-2160x1453.jpg);
+         background-size: cover;
+  background-repeat: no-repeat;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +83,7 @@
     </section>
 <!-- Advantages -->
   <section class="advantages">
-  <div class="container advantages-container">
+  <div class="advantages-container">
   <ul class="advantages-list">
     <li class="advantages-list__item">
       <h3 class="advantages-list__title">RAŽOŠANA</h3>
@@ -115,8 +157,65 @@
       </li>
     </ul>
     <img class="arrow" src="./images/227601_right_arrow_icon.png" alt="">
-
+<div class="bg-box"></div>
   </div>
+</section>
+<section class="actualities">
+  <div class="container">
+<h2 class="actualities-title">Aktualitātes</h2>
+<ul class="actualities-list">
+  <li class="actualities-list__item actualities-list__item--img1">
+    <div class="actualities-thumb">
+  <p class="actualities-text">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+  </div>
+  </li>
+  <li class="actualities-list__item actualities-list__item--img2">
+    <div class="actualities-thumb">
+
+  <p class="actualities-text">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+  </div>
+  </li>
+</ul>
+<div class="bg-box--act"></div>
+  </div>
+</section>
+<section class="realization">
+  <h2 class="realization-title">
+    Produkcijas realizācija Skandināvijā
+  </h2>
+  <img class="realization-image" src="./images/snazzy-image (1).png" alt="">
+</section>
+<section class="footer">
+  <div class="container">
+  <div class="footer-nav">
+    <a href="#" class="footer-nav__logo"><img src="./images/eko-nams-logo-footer.svg" alt="" class="footer-nav__logo"></a>
+  <ul class="footer-nav__list">
+    <li class="footer-nav__item"><a class="footer-nav__link" href="#">LEJUPLĀDES</a></li>
+  <li class="footer-nav__item"><a class="footer-nav__link" href="#">SĪKDATNES NOTEIKUMI</a></li>
+  <li class="footer-nav__item"><a class="footer-nav__link" href="#">PRIVĀTUMA POLITIKA</a></li>
+</ul>
+  </div>
+  <img src="./images/lineala-raksts.svg" alt="" class="footer-img">
+  <ul class="footer-socials">
+    <li class="footer-socials__item"><p class="footer-socials-text">© 2020 EKO NAMS. Visas tiesības aizsargātas</p></li>
+    <li class="footer-socials__item">
+      <img class="footer-socials__logo" src="./images/_caballero-digital-agency.svg" alt="">
+    </li>
+    <li class="footer-socials__item">
+      <ul class="footer-media">
+        <li class="footer-media__item"><a class="footer-media__link" href="#">
+          <img src="./images/logo-fb-simple.svg" alt="" class="footer-media__img">
+        </a></li>
+        <li class="footer-media__item"><a class="footer-media__link" href="#">
+          <img src="./images/linkedin (2).svg" alt="" class="footer-media__img">
+        </a></li>
+        <li class="footer-media__item"><a class="footer-media__link" href="#">
+          <img src="./images/logo-youtube.svg" alt="" class="footer-media__img">
+        </a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 </section>
     <script src="./index.js"></script>
   </body>

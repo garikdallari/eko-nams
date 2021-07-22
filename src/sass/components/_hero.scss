@@ -1,8 +1,12 @@
-.hero {
+.hero-container {
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hero-title {
+  position: absolute;
+  font-family: 'Klavika-Regular';
+
+  left: 20%;
   font-size: 52px;
   font-style: normal;
   width: 500px;

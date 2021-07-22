@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 114px;
+  padding-bottom: 77px;
+}
+
+.footer-nav__link {
+  color: inherit;
+  font-family: 'Klavika Bold';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-nav {
+  display: flex;
+  &__list {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 200px;
+  }
+}
+.footer-nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+.footer-img {
+  width: 100%;
+  margin-top: 70px;
+}
+.footer-socials {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-socials__item:not(:last-child) {
+  margin-right: 200px;
+}
+.footer-media {
+  display: flex;
+}
+.footer-media__item:not(:last-child) {
+  margin-right: 20px;
+}

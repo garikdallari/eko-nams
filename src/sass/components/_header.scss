@@ -6,7 +6,7 @@
 .header-link {
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 10.5%;
   width: 170px;
   height: 224px;
   background-color: #242032;
@@ -15,15 +15,15 @@
   justify-content: center;
 }
 .header-nav {
+  margin-left: 200px;
   display: flex;
   justify-content: center;
 
-  &__item {
+  &__link {
+    font-family: 'Klavika';
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-  }
-  &__link {
     color: inherit;
   }
 
