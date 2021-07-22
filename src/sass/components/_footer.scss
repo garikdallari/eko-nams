@@ -5,7 +5,6 @@
 
 .footer-nav__link {
   color: inherit;
-  font-family: 'Klavika Bold';
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -13,6 +12,7 @@
 
 .footer-nav {
   display: flex;
+
   &__list {
     display: flex;
   }
@@ -40,4 +40,9 @@
 }
 .footer-media__item:not(:last-child) {
   margin-right: 20px;
+}
+.footer-socials-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: #6e6e6e;
 }

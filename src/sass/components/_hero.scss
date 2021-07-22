@@ -1,7 +1,13 @@
 .hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-attels.jpg);
 }
+
 .hero-title {
   position: absolute;
   font-family: 'Klavika-Regular';
@@ -11,9 +17,4 @@
   font-style: normal;
   width: 500px;
   color: white;
-}
-.hero-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
 }
