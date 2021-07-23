@@ -31,6 +31,10 @@
   margin-left: 200px;
   display: flex;
   justify-content: center;
+  @media (min-width: 377px) and (max-width: 768px) {
+    margin: 0;
+    text-align: center;
+  }
 
   &__link {
     font-family: 'Klavika-Bold';
@@ -50,19 +54,52 @@
     display: block;
   }
 }
+.header-nav__link--en {
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: none;
+  }
+}
+.header-nav__item:not(:last-child) {
+  @media (min-width: 377px) and (max-width: 768px) {
+    margin-bottom: 39px;
+  }
+}
 
 .header-dropdown {
   position: absolute;
   z-index: 99;
   width: 174px;
   display: none;
+  @media (min-width: 377px) and (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    background-color: #6f6f70;
+  }
 }
+.header-dropdown__link {
+  @media (min-width: 377px) and (max-width: 768px) {
+    width: 100%;
+    color: #6f6f70;
+  }
+}
+
 .header-dropdown__item {
   padding: 10px 17px;
   background-color: #252033;
   font-size: 14px;
   line-height: 18px;
   color: white;
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: block;
+    align-self: center;
+    font-family: 'Klavika-Bold';
+    background-color: #fff;
+    color: #292929;
+    &:hover {
+      background-color: #6f6f70;
+    }
+  }
 
   &:hover {
     background-color: #f6f7f9;
@@ -70,10 +107,11 @@
     transition: all 250ms ease;
   }
 }
-.header-nav__item:nth-child(1):hover .header-dropdown {
+
+.header-nav__item:nth-child(2):hover .header-dropdown {
   display: block;
   @media (min-width: 377px) and (max-width: 768px) {
-    display: none;
+    display: block;
   }
 }
 
@@ -81,13 +119,44 @@
   background-color: white;
   color: #6f6f70;
 }
-.header-nav__item:nth-child(3):hover .header-dropdown {
+.header-nav__item:nth-child(4):hover .header-dropdown {
   display: block;
   color: #252033;
   background-color: #f1f1f1;
   border: 1px solid #ccc8c8;
   transition: all 250ms ease;
   @media (min-width: 377px) and (max-width: 768px) {
+    display: block;
+    border: none;
+  }
+}
+.header-langset {
+  @media (min-width: 377px) and (max-width: 768px) {
+    align-self: center;
+
+    display: inline-flex;
+    margin-top: 120px;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+.header-langset__item {
+  padding: 20px 18px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Klavika-Bold';
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  @media (min-width: 769px) {
     display: none;
   }
 }
