@@ -3,6 +3,11 @@
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 370px) and (max-width: 768px) {
+    padding: 0;
+    min-width: 768px;
+  }
 }
 
 ul {
@@ -40,6 +45,9 @@ a {
 body {
   font-family: 'Klavika-Regular', sans-serif;
   position: relative;
+  @media (min-width: 377px) and (max-width: 768px) {
+    overflow-x: hidden;
+  }
 }
 
 * {
