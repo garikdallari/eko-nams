@@ -1,5 +1,6 @@
 .actualities {
   position: relative;
+  z-index: 1;
   padding-top: 168px;
   padding-bottom: 105px;
   text-align: center;
@@ -42,11 +43,13 @@
   font-size: 18px;
   line-height: 26px;
   color: white;
+
+  transition: transform 400ms ease;
 }
 .bg-box--act {
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: -1;
   left: 10.5%;
   width: 150px;
   height: 750px;
@@ -57,10 +60,29 @@
     url(../images/kontor-2160x1082.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: transform 400ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  &:hover .actualities-text {
+    transform: translateY(75px);
+  }
 }
 .actualities-list__item--img2 {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/veggtykkelser-2160x1453.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  transition: transform 400ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  &:hover .actualities-text {
+    transform: translateY(75px);
+  }
 }
