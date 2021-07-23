@@ -5,8 +5,9 @@
 
 .header-link {
   position: absolute;
+  z-index: 99;
   top: 0;
-  left: 10.5%;
+  left: 11.5%;
   width: 170px;
   height: 224px;
   background-color: #242032;
@@ -37,7 +38,7 @@
 
 .header-dropdown {
   position: absolute;
-  top: 70px;
+  z-index: 99;
   width: 174px;
   display: none;
 }

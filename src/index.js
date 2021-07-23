@@ -1,1 +1,1 @@
-import './js/map';
+import './js/hero';

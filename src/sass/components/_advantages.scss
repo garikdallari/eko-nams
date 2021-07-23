@@ -1,5 +1,10 @@
+.advantages {
+  // position: absolute;
+  margin-top: -80px;
+}
 .advantages-container {
   position: relative;
+  z-index: -1;
   height: 442px;
   background-color: #242032;
 }

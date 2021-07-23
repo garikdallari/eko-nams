@@ -1,20 +1,32 @@
-.hero-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-attels.jpg);
+.hero {
+  position: relative;
 }
-
 .hero-title {
-  position: absolute;
   font-family: 'Klavika-Regular';
-
-  left: 20%;
   font-size: 52px;
   font-style: normal;
-  width: 500px;
+  width: 450px;
   color: white;
+}
+.video {
+  width: 100%;
+  height: auto;
+}
+.hero-content {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.hero-mute {
+  margin-top: 50px;
+}
+.js-btn {
+  position: absolute;
+  top: 89%;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
