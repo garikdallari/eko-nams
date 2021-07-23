@@ -1,7 +1,10 @@
-const btnRef = document.querySelector('.js-btn');
-const videoRef = document.querySelector('.video');
+const video = document.querySelector('.video');
+const btn = document.querySelector('.js-btn');
 
+btn.addEventListener('click', makeVideoMute)
 
-btnRef.addEventListener('click', () => {
-    videoRef.setAttribute('muted','')
-})
+function makeVideoMute() {
+    if (!video.muted) {
+        video.muted = true;
+    }
+}
