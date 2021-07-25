@@ -1,7 +1,7 @@
 .realization {
   padding-top: 100px;
   text-align: center;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     padding-top: 0;
   }
 }
@@ -16,7 +16,7 @@
 }
 
 .map {
-  width: 100%;
+  width: 100vw;
   height: 500px;
   pointer-events: none;
 }

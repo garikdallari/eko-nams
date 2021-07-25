@@ -6,7 +6,7 @@
   margin-top: 128px;
   text-align: center;
   background-color: #e6e6e6;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     padding: 0;
     margin: 0;
   }
@@ -19,7 +19,7 @@
 }
 .actualities-list__item:first-child {
   margin-right: 30px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-right: auto;
     margin-bottom: 20px;
   }
@@ -28,7 +28,7 @@
 .actualities-list {
   display: flex;
   justify-content: center;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: block;
   }
 }
@@ -53,7 +53,7 @@
   color: white;
 
   transition: transform 400ms ease;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     top: 250px;
     left: 30px;
   }
@@ -67,7 +67,7 @@
   width: 150px;
   height: 870px;
   background-color: #242032;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: none;
   }
 }
@@ -77,6 +77,9 @@
   background-size: contain;
   min-width: 50%;
   transition: transform 400ms ease;
+  @media (min-width: 370px) and (max-width: 768px) {
+    width: 100vw;
+  }
 
   &:hover {
     transform: scale(1.2);
@@ -84,11 +87,11 @@
   }
   &:hover .actualities-text {
     transform: translateY(75px);
-    @media (min-width: 377px) and (max-width: 768px) {
+    @media (min-width: 370px) and (max-width: 768px) {
       transform: translateY(0);
     }
   }
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-left: auto;
   }
 }
@@ -98,6 +101,9 @@
   background-size: contain;
   min-width: 50%;
   transition: transform 400ms ease;
+  @media (min-width: 370px) and (max-width: 768px) {
+    width: 100vw;
+  }
 
   &:hover {
     transform: scale(1.2);
@@ -105,11 +111,11 @@
   }
   &:hover .actualities-text {
     transform: translateY(75px);
-    @media (min-width: 377px) and (max-width: 768px) {
+    @media (min-width: 370px) and (max-width: 768px) {
       transform: translateY(0);
     }
   }
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
   }

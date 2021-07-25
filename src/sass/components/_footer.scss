@@ -1,6 +1,6 @@
 .footer {
   padding-top: 114px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -9,7 +9,7 @@
   width: 1355px;
   margin-right: auto;
   margin-left: auto;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     width: 100vw;
   }
 }
@@ -23,20 +23,20 @@
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: block;
     text-align: center;
   }
 
   &__list {
     display: flex;
-    @media (min-width: 377px) and (max-width: 768px) {
+    @media (min-width: 370px) and (max-width: 768px) {
       display: block;
     }
   }
 
   &__logo {
-    @media (min-width: 377px) and (max-width: 768px) {
+    @media (min-width: 370px) and (max-width: 768px) {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
@@ -45,7 +45,7 @@
 }
 .footer-nav__item:not(:last-child) {
   margin-right: 30px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -54,7 +54,7 @@
   width: 100%;
   margin-top: 70px;
   margin-bottom: 100px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -62,20 +62,20 @@
 .footer-socials {
   display: flex;
   justify-content: space-between;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: block;
     text-align: center;
   }
 }
 .footer-socials__item:not(:last-child) {
   margin-right: 200px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-right: 0;
   }
 }
 .footer-media {
   display: flex;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-left: 30px;
   }
 }
@@ -86,13 +86,13 @@
   font-size: 15px;
   line-height: 18px;
   color: #6e6e6e;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-bottom: 30px;
   }
 }
 .footer-socials__logo {
   height: 50px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-left: 30px;
   }
 }

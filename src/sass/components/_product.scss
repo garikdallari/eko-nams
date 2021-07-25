@@ -1,7 +1,7 @@
 .product {
   position: relative;
   padding-bottom: 126px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -9,7 +9,7 @@
 }
 .product-list {
   display: flex;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: block;
   }
 }
@@ -17,7 +17,7 @@
   width: 487px;
   margin-right: 43px;
   margin-top: 319px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin: 0;
     width: auto;
   }
@@ -26,7 +26,7 @@
 .product-image {
   width: 570px;
   margin-top: 245px;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     width: 100%;
     margin-top: 10px;
   }
@@ -36,7 +36,7 @@
   font-size: 44px;
   line-height: 60px;
   color: #1d1a27;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -45,7 +45,7 @@
   font-size: 16px;
   line-height: 28px;
   color: #6f6f70;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     margin-bottom: 10px;
   }
 }
@@ -76,7 +76,7 @@
   width: 150px;
   height: 700px;
   background-color: #242032;
-  @media (min-width: 377px) and (max-width: 768px) {
+  @media (min-width: 370px) and (max-width: 768px) {
     display: none;
   }
 }
