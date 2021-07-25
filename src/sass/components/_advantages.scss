@@ -8,6 +8,10 @@
   align-items: center;
   height: 442px;
   background-color: #242032;
+  @media (min-width: 377px) and (max-width: 768px) {
+    height: auto;
+    padding-top: 20px;
+  }
 }
 
 .advantages-list {

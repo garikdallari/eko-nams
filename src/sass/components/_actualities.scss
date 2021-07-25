@@ -3,8 +3,13 @@
   z-index: 1;
   padding-top: 168px;
   padding-bottom: 105px;
+  margin-top: 128px;
   text-align: center;
   background-color: #e6e6e6;
+  @media (min-width: 377px) and (max-width: 768px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 .actualities-title {
   margin-bottom: 40px;
@@ -14,16 +19,19 @@
 }
 .actualities-list__item:first-child {
   margin-right: 30px;
+  @media (min-width: 377px) and (max-width: 768px) {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 }
+
 .actualities-list {
   display: flex;
   justify-content: center;
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: block;
+  }
 }
-.actualities-img {
-  width: 570px;
-  height: 375px;
-}
-
 .actualities-list__item {
   position: relative;
   width: 479px;
@@ -45,21 +53,29 @@
   color: white;
 
   transition: transform 400ms ease;
+  @media (min-width: 377px) and (max-width: 768px) {
+    top: 250px;
+    left: 30px;
+  }
 }
 .bg-box--act {
   position: absolute;
   top: 0;
   z-index: -1;
   left: 10.5%;
+  transform: translateY(-120px);
   width: 150px;
-  height: 750px;
+  height: 870px;
   background-color: #242032;
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: none;
+  }
 }
 .actualities-list__item--img1 {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/kontor-2160x1082.jpg);
-  background-size: cover;
+  background-image: url(../images/veggtykkelser-2160x1453.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 50%;
   transition: transform 400ms ease;
 
   &:hover {
@@ -68,14 +84,19 @@
   }
   &:hover .actualities-text {
     transform: translateY(75px);
+    @media (min-width: 377px) and (max-width: 768px) {
+      transform: translateY(0);
+    }
+  }
+  @media (min-width: 377px) and (max-width: 768px) {
+    margin-left: auto;
   }
 }
 .actualities-list__item--img2 {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/veggtykkelser-2160x1453.jpg);
-  background-size: cover;
+  background-image: url(../images/veggtykkelser-2160x1453.jpg);
   background-repeat: no-repeat;
-
+  background-size: contain;
+  min-width: 50%;
   transition: transform 400ms ease;
 
   &:hover {
@@ -84,5 +105,12 @@
   }
   &:hover .actualities-text {
     transform: translateY(75px);
+    @media (min-width: 377px) and (max-width: 768px) {
+      transform: translateY(0);
+    }
+  }
+  @media (min-width: 377px) and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
