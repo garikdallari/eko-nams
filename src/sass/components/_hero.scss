@@ -12,13 +12,17 @@
   font-style: normal;
   width: 450px;
   color: white;
+
+  @media (min-width: 377px) and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 .video {
   width: 100%;
   height: auto;
 
   @media (min-width: 377px) and (max-width: 768px) {
-    min-width: 377px;
+    max-width: 100vw;
   }
 }
 .hero-content {

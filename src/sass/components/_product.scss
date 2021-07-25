@@ -4,7 +4,6 @@
 }
 .product-list {
   display: flex;
-  // justify-content: flex-end;
 }
 .product-list__item:first-child {
   width: 487px;
@@ -49,4 +48,7 @@
   width: 150px;
   height: 700px;
   background-color: #242032;
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: none;
+  }
 }

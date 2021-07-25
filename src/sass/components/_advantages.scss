@@ -1,19 +1,21 @@
 .advantages {
-  margin-top: -80px;
+  position: relative;
+  margin-top: -5px;
 }
 .advantages-container {
-  position: relative;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 442px;
   background-color: #242032;
 }
 
 .advantages-list {
-  position: absolute;
-  top: 25%;
-  left: 11.5%;
   display: flex;
   justify-content: center;
+  @media (min-width: 377px) and (max-width: 768px) {
+    display: block;
+  }
 }
 .advantages-list__item {
   width: 270px;
@@ -54,6 +56,6 @@
 }
 .advantages-img {
   position: absolute;
-  width: 100%;
-  top: 91%;
+  bottom: 0;
+  width: 100vw;
 }
