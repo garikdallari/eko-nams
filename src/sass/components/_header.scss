@@ -62,7 +62,7 @@
     display: none;
   }
 }
-.header-nav__item:not(:last-child) {
+.header-nav__item:not(:nth-child(6)) {
   @media (min-width: 377px) and (max-width: 768px) {
     margin-bottom: 39px;
   }
@@ -77,7 +77,7 @@
     position: relative;
     width: 100%;
     align-items: center;
-    background-color: #6f6f70;
+    // background-color: #6f6f70;
   }
 }
 .header-dropdown__link {
@@ -86,9 +86,6 @@
     color: #6f6f70;
   }
 }
-// .header-dropdown__link:hover {
-//   color: #252033;
-// }
 .header-dropdown--white {
   text-align: center;
 }
@@ -103,7 +100,6 @@
     align-self: center;
     font-family: 'Klavika-Bold';
     background-color: #fff;
-    color: #292929;
     &:hover {
       background-color: #6f6f70;
     }
@@ -144,7 +140,6 @@
     border: none;
   }
 }
-
 .header-langset {
   @media (min-width: 377px) and (max-width: 768px) {
     align-self: center;
@@ -174,5 +169,24 @@
   width: 16px;
   @media (min-width: 769px) {
     display: none;
+  }
+}
+.header-nav__item {
+  @media (min-width: 377px) and (max-width: 768px) {
+    position: relative;
+  }
+}
+.header-nav__link::after {
+  @media (min-width: 377px) and (max-width: 768px) {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    background-image: url(../images/dropdown-arrow-icon-with-png-and-vector-format-for-free-unlimited-716097.png);
   }
 }
