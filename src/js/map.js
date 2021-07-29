@@ -78,6 +78,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FyaWtkYWxsYXJpIiwiYSI6ImNrcmdqNnJycTBhM3gyb
             center: [10, 60.8],
             zoom: 3
         });
+        map.scrollZoom.disable();
        
             geojson.features.forEach(function (marker) {
 
